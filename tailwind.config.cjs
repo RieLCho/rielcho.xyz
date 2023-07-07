@@ -5,7 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'maple-light': ["Maplestory Light"],
+        'maple-bold': ["Maplestory Bold"],
+      }
+    },
   },
   plugins: [],
 }
