@@ -3,6 +3,9 @@ module.exports = {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            boxShadow: {
+                Box: '0px 4px 8px 0px #DBDDE980',
+            },
             fontFamily: {
                 'maple-light': ['Maplestory Light'],
                 'maple-bold': ['Maplestory Bold'],
