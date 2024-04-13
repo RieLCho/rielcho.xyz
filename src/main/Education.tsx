@@ -1,6 +1,6 @@
-import { Dot } from '../utils/Dot'
-import { Italic } from '../utils/Italic'
-import { SubTitle, Title } from '../utils/Title'
+import { Dot } from '../utils/Dot';
+import { Italic } from '../utils/Italic';
+import { SubTitle, Title } from '../utils/Title';
 
 export const Education = () => {
     return (
@@ -20,5 +20,5 @@ export const Education = () => {
                 <Italic>2019.03 ~ (휴학)</Italic>
             </div>
         </div>
-    )
-}
+    );
+};

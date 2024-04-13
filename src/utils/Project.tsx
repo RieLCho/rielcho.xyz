@@ -1,10 +1,10 @@
-import { Dot } from './Dot'
-import { Italic } from './Italic'
-import { SubTitle } from './Title'
+import { Dot } from './Dot';
+import { Italic } from './Italic';
+import { SubTitle } from './Title';
 
 interface techStack {
-    label: string
-    url: string
+    label: string;
+    url: string;
 }
 
 const Project = ({
@@ -15,12 +15,12 @@ const Project = ({
     imgPath,
     techStack,
 }: {
-    repo: string
-    title: string
-    subTitle?: string
-    description?: string
-    imgPath?: string
-    techStack?: techStack[]
+    repo: string;
+    title: string;
+    subTitle?: string;
+    description?: string;
+    imgPath?: string;
+    techStack?: techStack[];
 }) => {
     return (
         <div className="flex flex-col gap-2">
@@ -44,7 +44,7 @@ const Project = ({
                                         <a key={v.label} href={v.url} target="_blank">
                                             <div>{`${v.label}`}</div>
                                         </a>
-                                    )
+                                    );
                                 })}
                             </Italic>
                         )}
@@ -52,7 +52,7 @@ const Project = ({
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Project
+export default Project;

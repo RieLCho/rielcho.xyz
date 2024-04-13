@@ -9,5 +9,5 @@ export const PersonalInfo = () => {
             <div className="font-maple-bold text-7xl">Yangjin Cho</div>
             <div className="font-maple-light text-2xl">좋아하는 것에 진심인, 꿈나무 개발자 조양진입니다.</div>
         </div>
-    )
-}
+    );
+};

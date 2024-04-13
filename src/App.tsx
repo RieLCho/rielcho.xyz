@@ -1,8 +1,8 @@
-import { WorkExperiences } from './main/WorkExperiences'
-import { Education } from './main/Education'
-import { PersonalInfo } from './main/PersonalInfo'
-import { PersonalProjects } from './main/PersonalProjects'
-import Contribution from './main/Contributions'
+import { WorkExperiences } from './main/WorkExperiences';
+import { Education } from './main/Education';
+import { PersonalInfo } from './main/PersonalInfo';
+import { PersonalProjects } from './main/PersonalProjects';
+import Contribution from './main/Contributions';
 
 const Header = () => {
     return (
@@ -19,8 +19,8 @@ const Header = () => {
                 </a>
             </div>
         </header>
-    )
-}
+    );
+};
 
 const Main = () => {
     return (
@@ -33,12 +33,12 @@ const Main = () => {
                 <Contribution />
             </div>
         </body>
-    )
-}
+    );
+};
 
 const Footer = () => {
-    return <footer className="bg-black h-20">footer</footer>
-}
+    return <footer className="bg-black h-20">footer</footer>;
+};
 
 const App = () => {
     return (
@@ -49,7 +49,7 @@ const App = () => {
             </div>
             <Footer />
         </>
-    )
-}
+    );
+};
 
-export default App
+export default App;

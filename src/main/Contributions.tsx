@@ -1,16 +1,16 @@
-import Project from '../utils/Project'
-import { Title } from '../utils/Title'
-import ShareXLogo from '../assets/projects/ShareX.png'
-import FlameshotLogo from '../assets/projects/Flameshot.svg'
-import { Dot } from '../utils/Dot'
+import Project from '../utils/Project';
+import { Title } from '../utils/Title';
+import ShareXLogo from '../assets/projects/ShareX.png';
+import FlameshotLogo from '../assets/projects/Flameshot.svg';
+import { Dot } from '../utils/Dot';
 
 const Contribution = ({ href, label }: { href: string; label: string }) => {
     return (
         <a href={href} target="_blank" className="font-maple-light">
             <Dot>{label}</Dot>
         </a>
-    )
-}
+    );
+};
 const Contributions = () => {
     return (
         <div className="flex flex-col gap-4">
@@ -33,7 +33,7 @@ const Contributions = () => {
                 label="misskey (Front-End 버그 수정)"
             />
         </div>
-    )
-}
+    );
+};
 
-export default Contributions
+export default Contributions;

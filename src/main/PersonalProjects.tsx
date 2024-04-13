@@ -1,9 +1,9 @@
-import { SubTitle, Title } from '../utils/Title'
-import SWAILogo from '../assets/projects/SWAI.png'
-import BarcodeLogo from '../assets/projects/Barcode.png'
-import AILogo from '../assets/projects/AI.png'
-import HayakuLogo from '../assets/projects/Hayaku.png'
-import Project from '../utils/Project'
+import { SubTitle, Title } from '../utils/Title';
+import SWAILogo from '../assets/projects/SWAI.png';
+import BarcodeLogo from '../assets/projects/Barcode.png';
+import AILogo from '../assets/projects/AI.png';
+import HayakuLogo from '../assets/projects/Hayaku.png';
+import Project from '../utils/Project';
 
 export const PersonalProjects = () => {
     return (
@@ -61,5 +61,5 @@ export const PersonalProjects = () => {
                 ]}
             />
         </div>
-    )
-}
+    );
+};

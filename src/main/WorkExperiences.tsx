@@ -1,6 +1,6 @@
-import { Dot } from '../utils/Dot'
-import { Italic } from '../utils/Italic'
-import { SubTitle, Title } from '../utils/Title'
+import { Dot } from '../utils/Dot';
+import { Italic } from '../utils/Italic';
+import { SubTitle, Title } from '../utils/Title';
 
 export const WorkExperiences = () => {
     return (
@@ -13,5 +13,5 @@ export const WorkExperiences = () => {
                 <Italic>2021.08 ~ (재직 중)</Italic>
             </div>
         </div>
-    )
-}
+    );
+};
