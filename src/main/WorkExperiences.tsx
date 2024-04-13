@@ -9,7 +9,9 @@ export const WorkExperiences = () => {
             <SubTitle>
                 <Dot>NGINE STUDIOS @ NEXON COMPANY</Dot>
             </SubTitle>
-            <Italic>2021.08 ~ (재직 중)</Italic>
+            <div className="pl-5">
+                <Italic>2021.08 ~ (재직 중)</Italic>
+            </div>
         </div>
     )
 }

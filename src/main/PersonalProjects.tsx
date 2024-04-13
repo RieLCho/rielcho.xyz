@@ -3,31 +3,10 @@ import { Italic } from '../utils/Italic'
 import { SubTitle, Title } from '../utils/Title'
 import SWAILogo from '../assets/projects/SWAI.png'
 import BarcodeLogo from '../assets/projects/Barcode.png'
-
-const Project = ({
-    title,
-    subTitle,
-    description,
-    imgPath,
-    techStack,
-}: {
-    title: string
-    subTitle: string
-    description: string
-    imgPath: string
-    techStack: string[]
-}) => {
-    return (
-        <div className="flex flex-col gap-2">
-            <SubTitle>
-                <Dot>{title}</Dot>
-            </SubTitle>
-            <img src={imgPath} alt={title} className="w-40 h-auto rounded-3xl border-black border-4" />
-            <Italic>{description}</Italic>
-            <Italic>{techStack.join(', ')}</Italic>
-        </div>
-    )
-}
+import AILogo from '../assets/projects/AI.png'
+import HayakuLogo from '../assets/projects/Hayaku.png'
+import DongsikLogo from '../assets/projects/Dongsik.png'
+import Project from '../utils/Project'
 
 export const PersonalProjects = () => {
     return (
@@ -47,6 +26,27 @@ export const PersonalProjects = () => {
                 imgPath={BarcodeLogo}
                 techStack={['Java', 'MySQL', 'Glide', 'Firebase', 'KakaoSDK', 'Google Vision API']}
             />
+            <Project
+                title="AI 모델 보안 강화 방법 연구"
+                subTitle="동국대학교 2021학년도 1학기 개별연구"
+                description="안전하게 AI 모델을 사용할 수 있도록 AI 모델 생성시 발생할 수 있는 보안 취약점을 분석하고 이를 사전에 제거, 방어, 검출 하기 위한 기법을 연구하였습니다."
+                imgPath={AILogo}
+                techStack={['Python', 'Adversarial-Robustness-Toolbox', 'Tensorflow', 'Keras']}
+            />
+            <Project
+                title="Hayaku"
+                subTitle="Open Source Twitter Client Project"
+                description='과거 아이폰의 iOS에 존재하던 상단바의 "Tap to Tweet" 버튼을 안드로이드로 포팅하여, 상단바에서 언제 어디서든 쉽고 간편하게 트윗을 보낼 수 있는 안드로이드 어플리케이션입니다.'
+                imgPath={HayakuLogo}
+                techStack={['Java', 'Twitter4J', 'Glide']}
+            />
+            {/* <Project
+                title="동국대도 식후경"
+                subTitle="Open Source School Menu Parser Project"
+                description='"동국대도 식후경" (A.K.A 동식이)은 동국대학교의 학식을 알려주는 디스코드 봇입니다. 기존에 사용하던 카카오톡 동국대학교 응답봇이 api 지원 종료되며 서비스가 없어져, 친구들과 함께 사용하기 위해 개발하였습니다.'
+                imgPath={DongsikLogo}
+                techStack={['Python', 'Discord.py', 'BeautifulSoup4', 'lxml']}
+            /> */}
         </div>
     )
 }
