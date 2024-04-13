@@ -26,7 +26,9 @@ const Project = ({
         <div className="flex flex-col gap-2">
             <a href={repo} target="_blank">
                 <SubTitle>
-                    <Dot>{title}</Dot>
+                    <Dot>
+                        <span className="underline">{title}</span>
+                    </Dot>
                 </SubTitle>
             </a>
             <div className="pl-5">
@@ -35,7 +37,7 @@ const Project = ({
                     {imgPath && (
                         <img src={imgPath} alt={title} className="w-40 h-auto rounded-3xl border-black shadow-box" />
                     )}
-                    <div className="flex-col">
+                    <div className="flex-col sm:hidden">
                         {description && <p className="font-maple-light text-xl whitespace-pre-line">{description}</p>}
                         {techStack && (
                             <Italic>
