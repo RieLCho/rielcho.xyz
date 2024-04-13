@@ -1,6 +1,7 @@
+import { WorkExperiences } from './main/WorkExperiences'
 import { Education } from './main/Education'
 import { PersonalInfo } from './main/PersonalInfo'
-import { Skills } from './main/Skills'
+import { PersonalProjects } from './main/PersonalProjects'
 
 const Header = () => {
     return (
@@ -25,8 +26,9 @@ const Main = () => {
         <body className="h-fit w-full px-64">
             <div className="px-48 py-20 bg-bg100 space-y-20 shadow-box border-2 rounded-3xl">
                 <PersonalInfo />
+                <WorkExperiences />
                 <Education />
-                <Skills />
+                <PersonalProjects />
             </div>
         </body>
     )
