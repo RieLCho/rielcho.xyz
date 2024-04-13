@@ -37,7 +37,7 @@ const Project = ({
                     {imgPath && (
                         <img src={imgPath} alt={title} className="w-40 h-auto rounded-3xl border-black shadow-box" />
                     )}
-                    <div className="flex-col sm:hidden">
+                    <div className="flex-col lg:block md:hidden sm:hidden">
                         {description && <p className="font-maple-light text-xl whitespace-pre-line">{description}</p>}
                         {techStack && (
                             <Italic>
