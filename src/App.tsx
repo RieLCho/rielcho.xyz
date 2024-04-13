@@ -1,4 +1,6 @@
+import { Education } from './main/Education'
 import { PersonalInfo } from './main/PersonalInfo'
+import { Skills } from './main/Skills'
 
 const Header = () => {
     return (
@@ -20,22 +22,24 @@ const Header = () => {
 
 const Main = () => {
     return (
-        <body className="h-screen w-full">
-            <div className="p-10">
+        <body className="h-fit w-full px-64">
+            <div className="px-48 py-20 bg-bg100 space-y-20 shadow-box border-2 rounded-3xl">
                 <PersonalInfo />
+                <Education />
+                <Skills />
             </div>
         </body>
     )
 }
 
 const Footer = () => {
-    return <footer className="bg-black">footer</footer>
+    return <footer className="bg-black h-20">footer</footer>
 }
 
 const App = () => {
     return (
         <>
-            <div className="w-full h-full p-10 bg-bg100">
+            <div className="w-full h-full p-10 bg-bg200">
                 <Header />
                 <Main />
             </div>
