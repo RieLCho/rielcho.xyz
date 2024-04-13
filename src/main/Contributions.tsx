@@ -15,7 +15,7 @@ const Contribution = ({ href, label }: { href: string; label: string }) => {
 };
 const Contributions = () => {
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
             <Title>Contributions</Title>
             <Contribution href="https://github.com/ShareX/ShareX/commits?author=RieLCho" label="ShareX (번역 기여)" />
             <Contribution
