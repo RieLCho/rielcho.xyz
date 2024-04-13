@@ -1,0 +1,28 @@
+on:
+    push:
+        branches: ['main']
+    pull_request:
+        branches: ['main']
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3.3.0
+            - name: execute remote ssh
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.REMOTE_IP }}
+                  username: ${{ secrets.REMOTE_USER }}
+                  key: ${{ secrets.REMOTE_IDENTITYFILE }}
+                  port: ${{ secrets.REMOTE_PORT }}
+                  script: |
+                      cd /home/ubuntu/workspace/jini.dev
+                      sudo pnpm run build
+                      echo "project built"
+                      sudo rm -rf /var/www/jini.dev/*
+                      echo "old files removed"
+                      sudo cp -r dist /var/www/jini.dev
+                      echo "dist copied to /var/www/jini.dev"
+                      sudo systemctl restart nginx
+                      echo "nginx restarted"
