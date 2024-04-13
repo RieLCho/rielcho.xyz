@@ -2,6 +2,7 @@ import { WorkExperiences } from './main/WorkExperiences'
 import { Education } from './main/Education'
 import { PersonalInfo } from './main/PersonalInfo'
 import { PersonalProjects } from './main/PersonalProjects'
+import Contribution from './main/Contributions'
 
 const Header = () => {
     return (
@@ -29,6 +30,7 @@ const Main = () => {
                 <WorkExperiences />
                 <Education />
                 <PersonalProjects />
+                <Contribution />
             </div>
         </body>
     )
