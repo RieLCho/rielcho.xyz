@@ -18,7 +18,7 @@ jobs:
                   key: ${{ secrets.REMOTE_IDENTITYFILE }}
                   port: ${{ secrets.REMOTE_PORT }}
                   script: |
-                      cd /workspace/jini.dev
+                      cd /home/ubuntu/workspace/jini.dev
                       pnpm run build
                       sudo rm -rf /var/www/jini.dev/*
                       cp -r dist /var/www/jini.dev
