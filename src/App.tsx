@@ -43,7 +43,14 @@ const Main = () => {
 };
 
 const Footer = () => {
-    return <footer className="bg-black h-20">footer</footer>;
+    return (
+        <footer className="bg-black pt-4 justify-center align-middle h-20 font-maple-light md:text-base text-xs text-white">
+            <div>
+                <p className="text-center">© 2024 Yangjin Cho. All rights reserved.</p>
+                <p className="text-center">이 페이지에는 메이플스토리가제공한 메이플스토리 서체가 적용되어 있습니다.</p>
+            </div>
+        </footer>
+    );
 };
 
 const App = () => {
