@@ -10,7 +10,7 @@ export const PersonalInfo = () => {
                 Yangjin Cho
             </div>
             <div className="font-maple-light 2xl:text-2xl xl:text-2xl lg:text-xl md:text-sm sm:text-sm text-xs">
-                좋아하는 것에 진심인, 꿈나무 개발자 조양진입니다.
+                Student, Front-End Engineer & Gamer
             </div>
         </div>
     );
