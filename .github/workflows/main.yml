@@ -18,6 +18,13 @@ jobs:
                   port: ${{ secrets.REMOTE_PORT }}
                   script: |
                       cd /home/ubuntu/workspace/jini.dev
+                      echo "cd into project directory"
+                      sudo git switch main
+                      echo "switched to main branch"
+                      sudo git pull
+                      echo "pulled latest changes"
+                      sudo pnpm install
+                      echo "dependencies installed"
                       sudo pnpm run build
                       echo "project built"
                       sudo rm -rf /var/www/jini.dev/*
