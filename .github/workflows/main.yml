@@ -1,8 +1,14 @@
 on:
     push:
-        branches: ['main']
+        branches:
+            - 'main'
+            - 'develop'
+            - 'feature/*'
     pull_request:
-        branches: ['feature/*']
+        branches:
+            - 'main'
+            - 'develop'
+            - 'feature/*'
 
 jobs:
     deploy:
