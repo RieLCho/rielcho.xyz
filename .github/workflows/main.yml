@@ -3,12 +3,6 @@ on:
         branches:
             - 'main'
             - 'develop'
-            - 'feature/*'
-    pull_request:
-        branches:
-            - 'main'
-            - 'develop'
-            - 'feature/*'
 
 jobs:
     deploy:
@@ -25,13 +19,15 @@ jobs:
                   script: |
                       cd /home/ubuntu/workspace/jini.dev
                       echo "cd into project directory"
+                      nvm use
+                      echo "nvm activated"
                       sudo git fetch
                       echo "fetched latest changes"
                       sudo git switch ${{ github.head_ref }}
                       echo "switched to ${{ github.head_ref }} branch"
-                      sudo pnpm install
+                      sudo yarn
                       echo "dependencies installed"
-                      sudo pnpm run build
+                      sudo yarn build
                       echo "project built"
                       sudo rm -rf /var/www/jini.dev/*
                       echo "old files removed"
