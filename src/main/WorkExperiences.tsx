@@ -12,6 +12,26 @@ export const WorkExperiences = () => {
             <div className="pl-5">
                 <Italic>2021.08 ~ (재직 중)</Italic>
             </div>
+            <div className="pl-5">
+                <SubTitle>
+                    <a href={'https://www.gamescale.io/ko/products/11'} target="_blank">
+                        <SubTitle>
+                            <Dot>
+                                <span className="underline">AD Creator</span>
+                            </Dot>
+                        </SubTitle>
+                    </a>
+                    <a href={'https://www.intelligencelabs.tech/86c22758-0540-4732-be7c-2494a44b893e'} target="_blank">
+                        <SubTitle>
+                            <Dot>
+                                <span className="underline">
+                                    넥슨 크리에이터즈 플랫폼의 전세계 도약을 위한 검색 엔진 최적화 여정
+                                </span>
+                            </Dot>
+                        </SubTitle>
+                    </a>
+                </SubTitle>
+            </div>
         </div>
     );
 };
