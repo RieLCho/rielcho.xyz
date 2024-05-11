@@ -47,7 +47,7 @@ const Footer = () => {
         <footer className="bg-black pt-4 justify-center align-middle h-20 font-maple-light md:text-base text-xs text-white">
             <div>
                 <p className="text-center">© 2024 Yangjin Cho. All rights reserved.</p>
-                <p className="text-center">이 페이지에는 메이플스토리가제공한 메이플스토리 서체가 적용되어 있습니다.</p>
+                <p className="text-center">이 페이지에는 메이플스토리가 제공한 메이플스토리 서체가 적용되어 있습니다.</p>
             </div>
         </footer>
     );
