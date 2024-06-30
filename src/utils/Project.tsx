@@ -35,7 +35,11 @@ const Project = ({
                 {subTitle && <Italic>{subTitle}</Italic>}
                 <div className="flex gap-x-6 py-2">
                     {imgPath && (
-                        <img src={imgPath} alt={title} className="w-40 h-auto rounded-3xl border-black shadow-box" />
+                        <img
+                            src={imgPath}
+                            alt={title}
+                            className="max-w-40 max-h-40 rounded-3xl border-black shadow-box"
+                        />
                     )}
                     <div className="flex-col lg:block md:hidden sm:hidden">
                         {description && <p className="font-maple-light text-xl whitespace-pre-line">{description}</p>}
