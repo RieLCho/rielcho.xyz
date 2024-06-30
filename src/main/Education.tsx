@@ -17,7 +17,7 @@ export const Education = () => {
             </SubTitle>
             <div className="pl-5">
                 <Italic>GPA: 3.76/4.5</Italic>
-                <Italic>2019.03 ~ (휴학)</Italic>
+                <Italic>2019.03 ~ (재학 중)</Italic>
             </div>
         </div>
     );
