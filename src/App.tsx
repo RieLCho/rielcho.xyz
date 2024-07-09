@@ -24,7 +24,7 @@ const Header = () => {
 
 const Main = () => {
     return (
-        <body className="h-fit w-full 2xl:px-64 xl:px-16 lg:px-16 md:px-8 sm:px-0">
+        <body className="h-fit w-full 2xl:px-64 xl:px-16 lg:px-16 md:px-8 p-2">
             <div
                 className="2xl:px-48 xl:px-16 lg:px-16 md:px-8 sm:px-6 
                 2xl:py-20 xl:py-20 lg:py-16 md:py-8 sm:py-6 
@@ -58,7 +58,12 @@ const Footer = () => {
 const App = () => {
     return (
         <>
-            <div className="w-full h-full p-10 bg-bg200">
+            <div
+                className="w-full h-full p-0 lg:p-10 md:p-10 sm:p-5 bg-bg200"
+                style={{
+                    minWidth: '360',
+                }}
+            >
                 <Header />
                 <Main />
             </div>
