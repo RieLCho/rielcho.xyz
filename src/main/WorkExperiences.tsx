@@ -19,7 +19,7 @@ export const WorkExperiences = () => {
             </div>
             <div className="pl-5">
                 <SubTitle>
-                    <a href={'https://www.gamescale.io/ko/products/11'} target="_blank">
+                    <a href={'https://docs.gamescale.io/ko/doc/49/categories/13993'} target="_blank">
                         <SubTitle>
                             <Dot>
                                 <span className="underline">AD Creator 프론트엔드 개발</span>
